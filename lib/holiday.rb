@@ -68,13 +68,13 @@ holiday_hash.each do |season, holiday|
       holiday_split = holiday.to_s.split(" ")
 
       holiday_split.each do |hs|
-        hs.capitalize
+        hs.capitalize!
       end
 
       last_holiday_array = holiday_split.join(" ")
       last_supplies_array = supplies.join(", ")
 
-      puts "  #{last_holiday_array.capitalize}: #{last_supplies_array.capitalize}"
+      puts "  #{last_holiday_array}: #{last_supplies_array}"
     end
   end
 end
