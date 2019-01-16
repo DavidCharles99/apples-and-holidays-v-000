@@ -74,7 +74,7 @@ holiday_hash.each do |season, holiday|
       last_holiday_array = holiday_split.join(" ")
       last_supplies_array = supplies.join(", ")
 
-      puts "#{last_holiday_array}: #{last_supplies_array}"
+      puts "  #{last_holiday_array}: #{last_supplies_array}"
     end
   end
 end
