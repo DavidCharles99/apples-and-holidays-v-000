@@ -65,6 +65,12 @@ holiday_hash.each do |season, holiday|
 
     holiday.each do |holiday, supplies|
       holiday_split = holiday.split.to_s(" ")
+      holiday_split.each do |hs|
+      end
+      last_holiday_array = holiday_split.join(" ")
+      last_supplies_array = supplies.join(", ")
+
+      puts "#{last_holiday_array}: #{last_supplies_array}"
     end
   end
 end
